@@ -1,6 +1,7 @@
 # IDE generated files #
 ######################
 .idea/
+*.sublime-*
 
 # OS generated files #
 ######################
