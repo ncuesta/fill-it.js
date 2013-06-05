@@ -1,0 +1,26 @@
+/**
+ * fill-it.css
+ * https://github.com/ncuesta/fill-it.js
+ *
+ * Copyright (c) 2013 Jorge Condomi, Pablo Osso, Nahuel Cuesta Luengo
+ * Licensed under the MIT license.
+ *
+ * https://github.com/ncuesta/fill-it.js/blob/master/LICENSE
+ */
+
+.fill-it-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.fill-it-container.empty {
+  height: 0;
+}
+
+.fill-it-container.full {
+  top: 0;
+  height: 100%;
+}

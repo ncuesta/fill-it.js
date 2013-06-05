@@ -9,16 +9,25 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/demo.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body class="demo">
+        <h1>Fill it up, boy</h1>
 
-        <p>Fill it up, boy</p>
+        <p id="regular" class="container">
+            <a href="#regular" data-target="#regular" class="fi-btn">Regular</a>
+        </p>
+
+        <p id="root-beer" class="container">
+            <a href="#root-beer" data-target="#root-beer" class="fi-btn">Root beer</a>
+        </p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
+        <script src="js/fill-it.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
