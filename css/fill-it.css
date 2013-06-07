@@ -10,10 +10,12 @@
 
 .fill-it-container {
     position: absolute;
+    display: block;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 2;
+    background: transparent;
 }
 
 .fill-it-container.empty {
@@ -23,4 +25,15 @@
 .fill-it-container.full {
   top: 0;
   height: 100%;
+}
+
+/**
+ * Beverages
+ */
+.fill-it-container.coffee {
+  background-color: #c0ffee;
+}
+
+.fill-it-container.root-beer {
+  background-color: #bada55;
 }
