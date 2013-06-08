@@ -12,7 +12,7 @@
 
 var fillIt = window.fillIt = (function(d) {
     return function(opts) {
-        var container = d.createElement('div'),
+        var container = document.createElement('canvas'),
             context = getOpt(opts, 'context', d),
             classes = 'fill-it-container full';
 
@@ -25,11 +25,15 @@ var fillIt = window.fillIt = (function(d) {
             classes += ' ' + getOpt(opts, 'beverage');
         }
 
-        // TODO: Fill this :)
-
         container.className = classes;
-        container.innerHTML = 'beverage';
+
+        container.setAttribute('id', 'beverageContainer');
         context.appendChild(container);
+
+        // Getting the wave started
+        // @TODO we currently need an id String to initialize the wave, so just one container at a time.
+        var wave = new Wave();
+        wave.Initialize( 'beverageContainer' );
 
         context.className += ' filled ';
     };
