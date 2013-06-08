@@ -54,8 +54,6 @@ function Wave() {
      * Constructor.
      */
     this.Initialize = function( canvasID ) {
-
-        console.log(canvasID);
         canvas = document.getElementById( canvasID );
 
         if (canvas && canvas.getContext) {
