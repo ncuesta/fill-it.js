@@ -1,0 +1,50 @@
+/**
+ * demo.css
+ * https://github.com/ncuesta/fill-it.js
+ *
+ * Copyright (c) 2013 Jorge Condomi, Pablo Osso, Nahuel Cuesta Luengo
+ * Licensed under the MIT license.
+ *
+ * https://github.com/ncuesta/fill-it.js/blob/master/LICENSE
+ */
+
+ /**
+  * Demo styles for fill-it.js
+  */
+
+.demo {
+    padding: 1em;
+}
+
+section.example {
+    float: left;
+    width: 250px;
+    padding: 10px;
+}
+
+section h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.container {
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.fi-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+}
+
+.fi-btn:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
