@@ -26,6 +26,8 @@ var fillIt = window.fillIt = (function(d) {
         }
 
         container.className = classes;
+        container.style.height = (context.clientHeight || context.offsetHeight) + 'px';
+        container.style.width = (context.clientWidth || context.offsetWidth) + 'px';
 
         container.setAttribute('id', 'beverageContainer');
         context.appendChild(container);
@@ -33,7 +35,7 @@ var fillIt = window.fillIt = (function(d) {
         // Getting the wave started
         // @TODO we currently need an id String to initialize the wave, so just one container at a time.
         var wave = new Wave();
-        wave.Initialize( 'beverageContainer' );
+        wave.Initialize(container);
 
         context.className += ' filled ';
     };

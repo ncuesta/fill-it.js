@@ -53,8 +53,10 @@ function Wave() {
     /**
      * Constructor.
      */
-    this.Initialize = function( canvasID ) {
-        canvas = document.getElementById( canvasID );
+    this.Initialize = function( canvas ) {
+        WIDTH = canvas.width;
+        HEIGHT = canvas.height;
+        DETAIL = Math.round(WIDTH / 30);
 
         if (canvas && canvas.getContext) {
             context = canvas.getContext('2d');
@@ -78,7 +80,8 @@ function Wave() {
             $(canvas).mousemove(MouseMove);
             $(canvas).mousedown(MouseDown);
             $(canvas).mouseup(MouseUp);
-            $(window).resize(ResizeCanvas);
+            // I think we'll be fine without this - at least for the moment
+            //$(window).resize(ResizeCanvas);
 
             tidalInterval = setInterval( TidalRise, 1000 );
             timeUpdateInterval = setInterval( TimeUpdate, 40 );
@@ -86,8 +89,8 @@ function Wave() {
 
             CreateBubble();
 
-
-            ResizeCanvas();
+            // I think we'll be fine without this - at least for the moment
+            //ResizeCanvas();
 
         }
     };
